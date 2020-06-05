@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-    const animal = $("select#animal").val();
-    const schedule = $("select#schedule").val();
-    const travel = $("select#travel").val();
-    const hairColor = $("select#hair-color").val();
-    const tvShow = $("select#tv-show").val();
+    const animal = $("input:radio[name=animal]:checked").val();
+    const schedule = $("input:radio[name=schedule]:checked").val();
+    const travel = $("input:radio[name=travel]:checked").val();
+    const hairColor = $("input:radio[name=hair-color]:checked").val();
+    const tvShow = $("input:radio[name=tv-show]:checked").val();
     
 
     if (animal === "lemur" && schedule === "up-late" &&  travel != "paris" && hairColor === "blonde"){
