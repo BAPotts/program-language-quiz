@@ -9,10 +9,20 @@ $(document).ready(function() {
     
 
     if (animal === "lemur" && schedule === "up-late" &&  travel != "paris" && hairColor === "blonde"){
-      $("#output").text("You got Ruby!");
-    } else if ((animal === "blob" && (schedule === "up-early" || schedule === "up-late") && travel === "rome") || (hairColor === "red")){ 
-      $("#output").text("You got Python!");
-    }else { $("#output").text("You got c#!");
+      (".result").show();
+      $("#python").hide();
+      ("#c").hide();
+      $("#ruby").show();
+    }else if ((animal === "blob" && (schedule === "up-early" || schedule === "up-late") && travel === "rome") || (hairColor === "red")){ 
+      (".result").show();
+      $("#c").hide();
+      ("#ruby").hide();
+      $("#python").show();
+    }else {
+      (".result").show();
+      $("#python").hide();
+      ("#ruby").hide();
+      $("#c").show();
     }
 
 
