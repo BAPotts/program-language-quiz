@@ -3,12 +3,14 @@ $(document).ready(function() {
     const faveAnimal = $("select#fave-animal").val();
     const schedule = $("select#schedule").val();
     const travel = $("select#travel").val();
-
-    if (faveAnimal ==="lemur"){
-      alert("LEMUR LOVER");
-    } else {
-      alert("WRONG UR WRONG");
+  
+    if (faveAnimal === "lemur" && schedule === "up-late" && travel != "paris"){
+      alert("Ruby");
+    } else if (faveAnimal === "blob" && (schedule === "up-early" || schedule === "up-late") && travel === "rome"){ 
+      alert("Python");
+    }else { alert("C#");
     }
-    
+
+
   });
 });
