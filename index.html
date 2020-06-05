@@ -10,6 +10,29 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Which Programming Language is for You?</h1>
+      </div>
+      <form id="quiz">
+        <div class="row">
+        <label for="fave-animal">Which is your favorite animal?</label>
+        <select id="fave-animal">
+          <option value="lemur">Ring-tailed lemur</option>
+          <option value="chupacabra">Chupacapra</option>
+          <option value="blob">That weird blob fish</option>
+        </select>
+        </div>
+        <div class="row">
+        <label for="schedule">What's your schedule like?</label>
+        <select id="schedule">
+          <option value="up-late">I'm a night-owl</option>
+          <option value="up-early">Early to bed, early to rise</option>
+          <option value="never-up">I sleep the entire day</option>
+        </select>
+        </div>
+        <button type="submit" class="btn">submit</button>
+      </form>
+    </div>
   </body>
 </html>
