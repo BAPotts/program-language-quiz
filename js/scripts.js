@@ -9,17 +9,17 @@ $(document).ready(function() {
     
 
     if (animal === "lemur" && schedule === "up-late" &&  travel != "paris" && hairColor === "blonde"){
-      $(".result").show();
+      $("#result").show();
       $("#python").hide();
       $("#c").hide();
       $("#ruby").show();
     }else if ((animal === "blob" && (schedule === "up-early" || schedule === "up-late") && travel === "rome") || (hairColor === "red")){ 
-      $(".result").show();
+      $("#result").show();
       $("#c").hide();
       $("#ruby").hide();
       $("#python").show();
     }else {
-      $(".result").show();
+      $("#result").show();
       $("#python").hide();
       $("#ruby").hide();
       $("#c").show();
